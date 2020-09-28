@@ -1,0 +1,5 @@
+name: EasyScoreboard
+main: Jocoby\Main
+
+api: 3.0.0
+version: "0.1"
