@@ -22,7 +22,7 @@ class Main extends PluginBase{
     }
 
     public function onEnable(): void{
-        $this->getScheduler()->scheduleRepeatingTask(new Timer($this), 20);
+        $this->getScheduler()->scheduleRepeatingTask(new Timer($this), 20 * 5);
         $this->getLogger()->info("Успешно!");
     }
 
