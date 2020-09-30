@@ -17,17 +17,8 @@ use Jocoby\Timer\Timer;
  */
 class Main extends PluginBase{
 
-    public function onLoad(): void{
-        $this->getLogger()->info("Загрузка...");
-    }
-
     public function onEnable(): void{
         $this->getScheduler()->scheduleRepeatingTask(new Timer($this), 20 * 5);
-        $this->getLogger()->info("Успешно!");
-    }
-
-    public function onDisable(): void{
-        $this->getLogger()->info("Выключение...");
     }
 
 }
